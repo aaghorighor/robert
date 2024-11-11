@@ -1,0 +1,112 @@
+/*team single*/
+.single-team-member {
+	.team-info {
+		background-image: linear-gradient(to right, rgba(32, 40, 119, 0.85), rgba(55, 46, 149, 0.9), rgba(83, 49, 177, 0.85), rgba(114, 48, 205, 0.8), rgba(150, 41, 230, 0.8));
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transition: opacity 0.3s, visibility 0.3s;
+		transition: opacity 0.3s, visibility 0.3s;
+	}
+	&:hover {
+		.team-info {
+			opacity: 1;
+			visibility: visible;
+			h6 {
+				opacity: 1;
+				opacity: 1;
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+			h5 {
+				opacity: 1;
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+			.team-social {
+				opacity: 1;
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+	}
+}
+.team-image {
+	img {
+		display: block;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+}
+.team-info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	h5 {
+		-webkit-transition-delay: 0.2s;
+		transition-delay: 0.2s;
+		color: inherit;
+		-webkit-transform: translateY(25px);
+		transform: translateY(25px);
+		opacity: 0;
+		-webkit-transition: opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+		transition: opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+		transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+		transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+	}
+	h6 {
+		-webkit-transition-delay: 0.1s;
+		transition-delay: 0.1s;
+		-webkit-transform: translateY(25px);
+		transform: translateY(25px);
+		opacity: 0;
+		-webkit-transition: opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+		transition: opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+		transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+		transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+	}
+	.team-social {
+		-webkit-transform: translateY(25px);
+		transform: translateY(25px);
+		opacity: 0;
+		-webkit-transition: opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+		transition: opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+		transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+		transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.45s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+	}
+}
+.team-social {
+	li {
+		a {
+			text-decoration: none;
+			color: inherit;
+			opacity: 0.8;
+			&:hover {
+				opacity: 1;
+			}
+			span {
+				padding: 6px;
+			}
+		}
+	}
+}
+.visible-info {
+	width: 100%;
+}
+.team-social-list {
+	li {
+		a {
+			padding: 5px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		span {
+			font-size: 18px;
+			line-height: inherit;
+			vertical-align: middle;
+		}
+	}
+}

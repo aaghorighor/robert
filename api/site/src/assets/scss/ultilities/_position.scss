@@ -1,0 +1,40 @@
+.position-static {
+  position: static !important;
+}
+.position-relative {
+  position: relative !important;
+}
+.position-absolute {
+  position: absolute !important;
+}
+.position-fixed {
+  position: fixed !important;
+}
+.position-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+}
+.fixed-top {
+  position: fixed;
+  top: -1;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+.float {
+  float: center;
+}
+
+.z-index-positive {
+  z-index: 9999;
+}
+.z-index-negative {
+  z-index: -9999;
+}

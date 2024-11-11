@@ -1,0 +1,19 @@
+.rating i {
+    color: #ddd;
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+  .rating i.voted {
+    color: #FFC107;
+  }
+  .rating small {
+    margin-bottom: 0;
+    display: inline-block;
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+  .rating small a {
+    color: #999;
+    text-decoration: underline;
+  }
+  

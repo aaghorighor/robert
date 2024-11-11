@@ -1,0 +1,527 @@
+.text-start {
+    text-align: left !important;
+  }
+  
+  .text-end {
+    text-align: right !important;
+  }
+  
+  .text-center {
+    text-align: center !important;
+  }
+  
+  .text-decoration-none {
+    text-decoration: none !important;
+  }
+  
+  .text-decoration-underline {
+    text-decoration: underline !important;
+  }
+  
+  .text-decoration-line-through {
+    text-decoration: line-through !important;
+  }
+  
+  .text-lowercase {
+    text-transform: lowercase !important;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase !important;
+  }
+  
+  .text-capitalize {
+    text-transform: capitalize !important;
+  }
+  
+  .text-wrap {
+    white-space: normal !important;
+  }
+  
+  .text-nowrap {
+    white-space: nowrap !important;
+  }
+  
+  /* rtl:begin:remove */
+  .text-break {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+  }
+  
+  /* rtl:end:remove */
+  .text-blue {
+    --bs-text-opacity: 1;
+    color: #3f78e0 !important;
+  }
+  
+  .text-sky {
+    --bs-text-opacity: 1;
+    color: #5eb9f0 !important;
+  }
+  
+  .text-purple {
+    --bs-text-opacity: 1;
+    color: #747ed1 !important;
+  }
+  
+  .text-grape {
+    --bs-text-opacity: 1;
+    color: #605dba !important;
+  }
+  
+  .text-violet {
+    --bs-text-opacity: 1;
+    color: #a07cc5 !important;
+  }
+  
+  .text-pink {
+    --bs-text-opacity: 1;
+    color: #d16b86 !important;
+  }
+  
+  .text-fuchsia {
+    --bs-text-opacity: 1;
+    color: #e668b3 !important;
+  }
+  
+  .text-red {
+    --bs-text-opacity: 1;
+    color: #e2626b !important;
+  }
+  
+  .text-orange {
+    --bs-text-opacity: 1;
+    color: #f78b77 !important;
+  }
+  
+  .text-yellow {
+    --bs-text-opacity: 1;
+    color: #fab758 !important;
+  }
+  
+  .text-green {
+    --bs-text-opacity: 1;
+    color: #45c4a0 !important;
+  }
+  
+  .text-leaf {
+    --bs-text-opacity: 1;
+    color: #7cb798 !important;
+  }
+  
+  .text-aqua {
+    --bs-text-opacity: 1;
+    color: #54a8c7 !important;
+  }
+  
+  .text-navy {
+    --bs-text-opacity: 1;
+    color: #343f52 !important;
+  }
+  
+  .text-ash {
+    --bs-text-opacity: 1;
+    color: #9499a3 !important;
+  }
+  
+  .text-white {
+    --bs-text-opacity: 1;
+    color: #fff !important;
+  }
+  
+  .text-light {
+    --bs-text-opacity: 1;
+    color: #fefefe !important;
+  }
+  
+  .text-gray {
+    --bs-text-opacity: 1;
+    color: #f6f7f9 !important;
+  }
+  
+  .text-primary {
+    --bs-text-opacity: 1;
+    color: #3f78e0 !important;
+  }
+  
+  .text-secondary {
+    --bs-text-opacity: 1;
+    color: #aab0bc !important;
+  }
+  
+  .text-success {
+    --bs-text-opacity: 1;
+    color: #45c4a0 !important;
+  }
+  
+  .text-info {
+    --bs-text-opacity: 1;
+    color: #54a8c7 !important;
+  }
+  
+  .text-warning {
+    --bs-text-opacity: 1;
+    color: #fab758 !important;
+  }
+  
+  .text-danger {
+    --bs-text-opacity: 1;
+    color: #e2626b !important;
+  }
+  
+  .text-body {
+    --bs-text-opacity: 1;
+    color: #60697b !important;
+  }
+  
+  .text-muted {
+    --bs-text-opacity: 1;
+    color: #aab0bc !important;
+  }
+  
+  .text-inverse {
+    --bs-text-opacity: 1;
+    color: #cacaca !important;
+  }
+  
+  .text-dark {
+    --bs-text-opacity: 1;
+    color: #343f52 !important;
+  }
+  
+  .text-black-50 {
+    --bs-text-opacity: 1;
+    color: rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  .text-white-50 {
+    --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+  
+  .text-reset {
+    --bs-text-opacity: 1;
+    color: inherit !important;
+  }
+  
+  .text-opacity-25 {
+    --bs-text-opacity: 0.25;
+  }
+  
+  .text-opacity-50 {
+    --bs-text-opacity: 0.5;
+  }
+  
+  .text-opacity-75 {
+    --bs-text-opacity: 0.75;
+  }
+  
+  .text-opacity-100 {
+    --bs-text-opacity: 1;
+  }
+
+  .lineal-fill {
+    fill: #8caeec;
+  }
+  
+  .lineal-stroke {
+    fill: #36496d;
+  }
+  
+  .text-blue .lineal-fill {
+    fill: #8caeec;
+  }
+  
+  .text-sky .lineal-fill {
+    fill: #9ed5f6;
+  }
+  
+  .text-purple .lineal-fill {
+    fill: #acb2e3;
+  }
+  
+  .text-grape .lineal-fill {
+    fill: #a09ed6;
+  }
+  
+  .text-violet .lineal-fill {
+    fill: #c6b0dc;
+  }
+  
+  .text-pink .lineal-fill {
+    fill: #e3a6b6;
+  }
+  
+  .text-fuchsia .lineal-fill {
+    fill: #f0a4d1;
+  }
+  
+  .text-red .lineal-fill {
+    fill: #eea1a6;
+  }
+  
+  .text-orange .lineal-fill {
+    fill: #fab9ad;
+  }
+  
+  .text-yellow .lineal-fill {
+    fill: #fcd49b;
+  }
+  
+  .text-green .lineal-fill {
+    fill: #8fdcc6;
+  }
+  
+  .text-leaf .lineal-fill {
+    fill: #b0d4c1;
+  }
+  
+  .text-aqua .lineal-fill {
+    fill: #98cbdd;
+  }
+  
+  .text-navy .lineal-fill {
+    fill: #858c97;
+  }
+  
+  .text-ash .lineal-fill {
+    fill: #bfc2c8;
+  }
+  
+  .text-white .lineal-fill {
+    fill: white;
+  }
+  
+  .text-light .lineal-fill {
+    fill: #fefefe;
+  }
+  
+  .text-gray .lineal-fill {
+    fill: #fafafb;
+  }
+  
+  .text-dark .lineal-fill {
+    fill: #7d8084;
+  }
+  
+  .text-primary .lineal-fill {
+    fill: #8caeec;
+  }
+  
+  .solid-mono .fill-primary {
+    fill: #3f78e0;
+  }
+  .solid-mono .fill-secondary {
+    fill: #c5d7f6;
+  }
+  
+  .solid-mono.text-blue .fill-primary {
+    fill: #3f78e0;
+  }
+  .solid-mono.text-blue .fill-secondary {
+    fill: #c5d7f6;
+  }
+  
+  .solid-mono.text-sky .fill-primary {
+    fill: #5eb9f0;
+  }
+  .solid-mono.text-sky .fill-secondary {
+    fill: #cfeafb;
+  }
+  
+  .solid-mono.text-purple .fill-primary {
+    fill: #747ed1;
+  }
+  .solid-mono.text-purple .fill-secondary {
+    fill: #d5d8f1;
+  }
+  
+  .solid-mono.text-grape .fill-primary {
+    fill: #605dba;
+  }
+  .solid-mono.text-grape .fill-secondary {
+    fill: #cfceea;
+  }
+  
+  .solid-mono.text-violet .fill-primary {
+    fill: #a07cc5;
+  }
+  .solid-mono.text-violet .fill-secondary {
+    fill: #e3d8ee;
+  }
+  
+  .solid-mono.text-pink .fill-primary {
+    fill: #d16b86;
+  }
+  .solid-mono.text-pink .fill-secondary {
+    fill: #f1d3db;
+  }
+  
+  .solid-mono.text-fuchsia .fill-primary {
+    fill: #e668b3;
+  }
+  .solid-mono.text-fuchsia .fill-secondary {
+    fill: #f8d2e8;
+  }
+  
+  .solid-mono.text-red .fill-primary {
+    fill: #e2626b;
+  }
+  .solid-mono.text-red .fill-secondary {
+    fill: #f6d0d3;
+  }
+  
+  .solid-mono.text-orange .fill-primary {
+    fill: #f78b77;
+  }
+  .solid-mono.text-orange .fill-secondary {
+    fill: #fddcd6;
+  }
+  
+  .solid-mono.text-yellow .fill-primary {
+    fill: #fab758;
+  }
+    
+  .solid-mono.text-green .fill-primary {
+    fill: #45c4a0;
+  }
+  .solid-mono.text-green .fill-secondary {
+    fill: #c7ede3;
+  }
+  
+  .solid-mono.text-leaf .fill-primary {
+    fill: #7cb798;
+  }
+  .solid-mono.text-leaf .fill-secondary {
+    fill: #d8e9e0;
+  }
+  
+  .solid-mono.text-aqua .fill-primary {
+    fill: #54a8c7;
+  }
+  .solid-mono.text-aqua .fill-secondary {
+    fill: #cce5ee;
+  }
+  
+  .solid-mono.text-navy .fill-primary {
+    fill: #343f52;
+  }
+  .solid-mono.text-navy .fill-secondary {
+    fill: #c2c5cb;
+  }
+  
+  .solid-mono.text-ash .fill-primary {
+    fill: #9499a3;
+  }
+  .solid-mono.text-ash .fill-secondary {
+    fill: #dfe0e3;
+  }
+  
+  .solid-mono.text-white .fill-primary {
+    fill: #fff;
+  }
+  .solid-mono.text-white .fill-secondary {
+    fill: white;
+  }
+  
+  .solid-mono.text-light .fill-primary {
+    fill: #fefefe;
+  }
+  .solid-mono.text-light .fill-secondary {
+    fill: white;
+  }
+  
+  .solid-mono.text-gray .fill-primary {
+    fill: #f6f7f9;
+  }
+  .solid-mono.text-gray .fill-secondary {
+    fill: #fcfdfd;
+  }
+  
+  .solid-mono.text-dark .fill-primary {
+    fill: #262b32;
+  }
+  .solid-mono.text-dark .fill-secondary {
+    fill: #bebfc2;
+  }
+  
+  .solid-mono.text-primary .fill-primary {
+    fill: #3f78e0;
+  }
+  .solid-mono.text-primary .fill-secondary {
+    fill: #c5d7f6;
+  }
+  
+  .solid-duo.text-purple-aqua .fill-primary {
+    fill: #747ed1;
+  }
+  .solid-duo.text-purple-aqua .fill-secondary {
+    fill: #8ce0f1;
+  }
+  .solid-duo.text-navy-green .fill-primary {
+    fill: #414b64;
+  }
+  .solid-duo.text-navy-green .fill-secondary {
+    fill: #45c4a0;
+  }
+  .solid-duo.text-grape-fuchsia .fill-primary {
+    fill: #605dba;
+  }
+  .solid-duo.text-grape-fuchsia .fill-secondary {
+    fill: #f857a6;
+  }
+  .solid-duo.text-grape-green .fill-primary {
+    fill: #605dba;
+  }
+  .solid-duo.text-grape-green .fill-secondary {
+    fill: #94dd8e;
+  }
+  .solid-duo.text-navy-sky .fill-primary {
+    fill: #414b64;
+  }
+  .solid-duo.text-navy-sky .fill-secondary {
+    fill: #5eb9f0;
+  }
+  .solid-duo.text-blue-pink .fill-primary {
+    fill: #3f78e0;
+  }
+  .solid-duo.text-blue-pink .fill-secondary {
+    fill: #fc7eb9;
+  }
+  .solid-duo.text-green-fuchsia .fill-primary {
+    fill: #8ed882;
+  }
+  .solid-duo.text-green-fuchsia .fill-secondary {
+    fill: #e668b3;
+  }
+  .solid-duo.text-grape-yellow .fill-primary {
+    fill: #605dba;
+  }
+  .solid-duo.text-grape-yellow .fill-secondary {
+    fill: #fab758;
+  }
+  .solid-duo.text-sky-pink .fill-primary {
+    fill: #5eb9f0;
+  }
+  .solid-duo.text-sky-pink .fill-secondary {
+    fill: #ff98ab;
+  }
+  .solid-duo.text-purple-pink .fill-primary {
+    fill: #747ed1;
+  }
+  .solid-duo.text-purple-pink .fill-secondary {
+    fill: #fdb9d3;
+  }
+  .solid-duo.text-green-red .fill-primary {
+    fill: #45c4a0;
+  }
+  .solid-duo.text-green-red .fill-secondary {
+    fill: #ff7c94;
+  }
+  .solid-duo.text-red-yellow .fill-primary {
+    fill: #e54281;
+  }
+  .solid-duo.text-red-yellow .fill-secondary {
+    fill: #fab758;
+  }
+  

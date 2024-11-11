@@ -1,0 +1,209 @@
+//----------------------------------------------------------//
+//	COLOR SYSTEM
+//----------------------------------------------------------//
+$white: #fff !default;
+$black: #000 !default;
+$gray-100: #fefefe !default;
+$gray-200: #f6f7f9 !default;
+$gray-300: #cacaca !default;
+$gray-400: #aab0bc !default;
+$gray-500: #959ca9 !default;
+$gray-600: #60697b !default;
+$gray-700: #2f353a !default;
+$gray-800: #21262c !default;
+$gray-900: #1e2228 !default;
+$error: #de4747 !default;
+$light: $gray-100 !default;
+$gray: $gray-200 !default;
+$dark: #262b32 !default;
+$inverse: $gray-300 !default;
+$border: #a4aec6 !default;
+$border-light: rgba($border, 0.2) !default;
+$shadow-border: #083c82 !default;
+$feedback-success: #198754;
+$feedback-danger: #dc3545;
+$primary: $blue !default;
+$colors: (
+  'blue': $blue,
+  'sky': $sky,
+  'purple': $purple,
+  'grape': $grape,
+  'violet': $violet,
+  'pink': $pink,
+  'fuchsia': $fuchsia,
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'leaf': $leaf,
+  'aqua': $aqua,
+  'navy': $navy,
+  'ash': $ash,
+  'white': $white,
+  'light': $light,
+  'gray': $gray,
+  'dark': $dark,
+  'primary': $primary
+) !default;
+$secondary: $gray-400 !default;
+$success: $green !default;
+$info: $aqua !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$theme-colors: map-merge(
+  $colors,
+  (
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger
+  )
+);
+$text-colors: map-remove($theme-colors, 'dark') !default;
+$link-colors: map-remove($theme-colors, 'dark') !default;
+$button-colors: map-remove($theme-colors, 'gray') !default;
+$button-soft-colors: map-remove($colors, 'white', 'light', 'gray') !default;
+$bg-pale-colors: map-remove($colors, 'white', 'light', 'gray') !default;
+$bg-soft-colors: map-remove($colors, 'white', 'light', 'yellow') !default;
+$bullet-colors: map-remove($colors, 'yellow') !default;
+$main-color: $primary !default;
+$main-dark: $navy !default;
+$bg-soft-level: 92.5% !default;
+$bg-soft-yellow-level: 90.5% !default;
+$bg-pale-level: 84% !default;
+$border-soft-level: 70% !default;
+$icon-fill-level: 40% !default;
+$color-contrast-dark: $main-dark !default;
+$color-contrast-light: $white !default;
+$min-contrast-ratio: 3 !default;
+$gradient-1: linear-gradient(120deg, #f857a6 10%, #ef3f6e 100%) !default;
+$gradient-2: linear-gradient(40deg, rgba(245, 177, 97, 1) 0.4%, rgba(236, 54, 110, 1) 100.2%) !default;
+$gradient-3: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%) !default;
+$gradient-4: linear-gradient(125deg, #9040db, #ff72c2 50%, #ffd84f) !default;
+$gradient-5: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%) !default;
+$gradient-6: linear-gradient(45deg, #08aeea 0%, #2af598 100%) !default;
+$gradient-7: linear-gradient(100deg, #0093e9 0, #80d0c7 95%) !default;
+$gradient-8: linear-gradient(45deg, rgb(255, 222, 233), rgb(181, 255, 252)) !default;
+$gradients: (
+  gradient-1: $gradient-1,
+  gradient-2: $gradient-2,
+  gradient-3: $gradient-3,
+  gradient-4: $gradient-4,
+  gradient-5: $gradient-5,
+  gradient-6: $gradient-6,
+  gradient-7: $gradient-7,
+  gradient-8: $gradient-8
+) !default;
+$px: #00a6df !default;
+$adobe: #e61f26 !default;
+$android: #97c03d !default;
+$amazon: #f79400 !default;
+$apple: #1a1919 !default;
+$behance: #098ffa !default;
+$blackberry: #272727 !default;
+$blogger: #e86733 !default;
+$bitcoin: #f38633 !default;
+$css3: #006db6 !default;
+$dropbox: #007bdf !default;
+$dribbble: #d07ead !default;
+$github: #4073a6 !default;
+$google: #e44134 !default;
+$googleplay: #24b6be !default;
+$googledrive: #1b9f5e !default;
+$googlehangouts: #109956 !default;
+$facebook: #4470cf !default;
+$facebookmessenger: #007ff8 !default;
+$instagram: #d53581 !default;
+$intercom: #2e88f8 !default;
+$javascript: #f0d91d !default;
+$line: #0fab10 !default;
+$linkedin: #3393c1 !default;
+$mastercard: #f0931d !default;
+$medium: #00c364 !default;
+$opera: #e33737 !default;
+$paypal: #0089cc !default;
+$react: #00d1f7 !default;
+$reddit: #f84300 !default;
+$slack: #d4135c !default;
+$snapchat: #f7c31a !default;
+$swiggy: #f88a2d !default;
+$skype: #2ebbf0 !default;
+$telegram: #2caef0 !default;
+$tumblr: #5d82a4 !default;
+$twitter: #5daed5 !default;
+$youtube: #c8312b !default;
+$visualstudio: #6b61be !default;
+$vuejs: #3fb37f !default;
+$vk: #4f7db3 !default;
+$whatsapp: #00a859 !default;
+$brand-colors: (
+  'dropbox': $dropbox,
+  'dribbble': $dribbble,
+  'google-drive-alt': $googledrive,
+  'facebook-f': $facebook,
+  'instagram': $instagram,
+  'line': $line,
+  'facebook-messenger': $facebookmessenger,
+  'black-berry': $blackberry,
+  'linkedin': $linkedin,
+  'intercom': $intercom,
+  'facebook': $facebook,
+  'youtube': $youtube,
+  'apple': $apple,
+  'visual-studio': $visualstudio,
+  'twitter': $twitter,
+  'snapchat-ghost': $snapchat,
+  'slack': $slack,
+  'tumblr-square': $tumblr,
+  'medium-m': $medium,
+  'tumblr': $tumblr,
+  'adobe': $adobe,
+  'whatsapp': $whatsapp,
+  '500-px': $px,
+  'snapchat-square': $snapchat,
+  'behance': $behance,
+  'instagram-alt': $instagram,
+  'github-alt': $github,
+  'linkedin-alt': $linkedin,
+  'slack-alt': $slack,
+  'google': $google,
+  'google-play': $google,
+  'google-drive': $googledrive,
+  'vuejs-alt': $vuejs,
+  'google-hangouts': $googlehangouts,
+  'vuejs': $vuejs,
+  'java-script': $javascript,
+  'paypal': $paypal,
+  'reddit-alien-alt': $reddit,
+  'android-alt': $android,
+  'github': $github,
+  'android': $android,
+  'amazon': $amazon,
+  'adobe-alt': $adobe,
+  'master-card': $mastercard,
+  'opera-alt': $opera,
+  'css3-alt': $css3,
+  'opera': $opera,
+  'css3': $css3,
+  'twitter-alt': $twitter,
+  'intercom-alt': $intercom,
+  'swiggy': $swiggy,
+  'snapchat-alt': $snapchat,
+  'tumblr-alt': $tumblr,
+  'facebook-messenger-alt': $facebookmessenger,
+  'bitcoin-alt': $bitcoin,
+  'google-hangouts-alt': $googlehangouts,
+  'blogger': $blogger,
+  'blogger-alt': $blogger,
+  'bitcoin': $bitcoin,
+  'behance-alt': $behance,
+  'apple-alt': $apple,
+  'react': $react,
+  'telegram': $telegram,
+  'vk-alt': $vk,
+  'vk': $vk,
+  'skype': $skype,
+  'skype-alt': $skype,
+  'telegram-alt': $telegram
+) !default;

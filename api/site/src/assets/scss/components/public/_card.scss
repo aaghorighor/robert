@@ -1,0 +1,84 @@
+/*=========================================
+            06. PROMO SECTION CSS
+============================================*/
+.single-promo span {
+  font-size: 70px;
+  line-height: inherit;
+  margin-bottom: 20px;
+}
+.single-promo-1 {
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 1.5rem !important;
+  flex-basis: 19%;
+}
+.single-promo-1 span {
+  font-size: 35px;
+  background-image: url('../imgs/promo-icon-bg.svg');
+  background-size: 150px;
+  // padding: 35px;
+  background-repeat: no-repeat;
+  background-position: 45% 20%;
+}
+.single-promo img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+.single-promo .img-full-box {
+  width: auto !important;
+  height: auto !important;
+}
+.single-promo-hover {
+  transition: all 0.2s ease-out;
+  will-change: transform;
+}
+.single-promo-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+}
+
+/*promo section new style*/
+
+.single-promo-card {
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+}
+.card.single-promo-card {
+  border: 1px solid #eff2f7;
+  border-radius: 1rem;
+}
+.card.single-promo-card:hover {
+  background: #6730e3;
+  color: #ffffff;
+}
+.card.single-promo-card:hover span,
+.card.single-promo-card:hover h5,
+.card.single-promo-card:hover p.text-muted {
+  color: #ffffff !important;
+}
+.single-promo-card .card-body {
+  padding: 1.5rem;
+}
+
+.more {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  letter-spacing: -0.01rem;
+  transition: all 0.2s ease-in-out;
+  color: #afa8a8;
+  &:after {
+    line-height: 2;
+    content: '\e628';
+    padding-left: 0.05rem;
+    font-size: 0.5rem;
+    font-weight: normal;
+    margin-left: 0.25rem;
+    padding-top: 3px;
+  }
+  &:hover {
+    border-bottom: 2px solid #6730e3;
+  }
+}

@@ -1,0 +1,23 @@
+
+
+//----------------------------------------------------------//
+//	SHAPES
+//----------------------------------------------------------//
+@mixin bg-dot-variant($color) {
+    background-image: radial-gradient($color 2px, transparent 2.5px);
+  }
+  @mixin bg-line-variant($color) {
+    background: repeating-linear-gradient(
+      -55deg,
+      rgba($white, 0) 0.8px,
+      $color 1.6px,
+      $color 3px,
+      rgba($white, 0) 3.8px,
+      rgba($white, 0) 10px
+    );
+  }
+  
+
+  @mixin font-size($sizeValue) {  
+    font-size: $sizeValue + rem;
+  }

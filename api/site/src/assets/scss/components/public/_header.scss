@@ -1,0 +1,42 @@
+.header {
+  position: sticky;
+  height: 70px;
+  width: 100%;
+  &.sticky {
+    position: fixed;
+    border-bottom: 1px solid #bad6fb;
+    z-index: 999;
+    background: #ffffff;
+    box-shadow: 0 1rem 1rem rgba(#000, 0.175) !important;
+  }
+  &.zero {
+    height: 0;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    flex: 1;
+    flex-grow: 0px;
+    gap: 30px;
+    margin-right: 5%;
+    transition: all 0.2s ease-in;
+    a {
+      padding: 0;
+      flex-shrink: 0;
+      font-weight: 400;
+      text-decoration: none;
+      color: #000000ad;
+      &:hover {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .hamburger {
+    position: relative;
+    cursor: pointer;
+  }
+}
