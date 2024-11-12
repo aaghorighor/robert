@@ -41,6 +41,7 @@ const useReview = () => {
 
       const newReview = ([...state.data, await reviews.json()]).sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
       setState({ ...state, data: newReview , loading: false });
+      return true
     } catch (error) {
       setState({ ...state, error: error, loading: false });
     }

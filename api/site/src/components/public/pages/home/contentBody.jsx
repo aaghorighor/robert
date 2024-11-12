@@ -45,7 +45,7 @@ const ContentBody = () => {
       </div>
     );
   };
-
+ 
   return (
     <div>
       <Grid row spacing={4} className={`mt-2 w-70 flex-row`}>
@@ -187,19 +187,11 @@ const ContentBody = () => {
                   className={`text-dark fw-normal mt-1 text-black-50 `}
                 >
                   Rate this Book
-                </Text>
-                {!addReview && (
-                  <Button
-                    className="rounded-circle-30 primary-solid-btn-0"
-                    onClick={(e) => setAddReview(true)}
-                  >
-                    Write a Review
-                  </Button>
-                )}
+                </Text>                
               </div>
-              {addReview && <ReviewForm />}
+              <ReviewForm />
             </Grid>
-          </Grid>
+          </Grid>        
         </Grid>
       </Grid>
     </div>
