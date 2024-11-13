@@ -1,4 +1,4 @@
-const { removeReview, addReview, getReviews } = require('../services/reviewService')
+const { removeReview, addReview, getReviews, getReviewStats } = require('../services/reviewService')
 
 exports.getReviews = async (req, res) => {
   const reviews = await getReviews()
@@ -11,6 +11,11 @@ exports.addReview = async (req, res) => {
 }
 
 exports.removeReview = async (req, res) => {
-  const events = await removeReview(req.params.id)
-  return res.status(200).json(events)
+  const result = await removeReview(req.params.id)
+  return res.status(200).json(result)
+}
+
+exports.getReviewStats = async (req, res) => {
+  const reviews = await getReviewStats()
+  return res.status(200).json(reviews)
 }

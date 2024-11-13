@@ -6,12 +6,18 @@ const router = express.Router()
 const {
   getReviews,
   addReview,
-  removeReview,   
+  removeReview,  
+  getReviewStats 
 } = require('../controllers/review')
 
 router.get(
   '/reviews', 
   getReviews
+)
+
+router.get(
+  '/review-stats',
+  getReviewStats
 )
 
 router.post(

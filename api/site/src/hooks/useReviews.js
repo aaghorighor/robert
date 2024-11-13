@@ -28,6 +28,30 @@ const useReview = () => {
     }
   };
 
+  const handleFetchReviewStats = async () => {
+    try {
+      setState({ ...state, loading: true });
+
+      const reviews = await fetch(
+        `${process.env.REACT_APP_HOST}/review-stats`,
+        {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        },
+      );
+
+      setState({ ...state, loading: false });
+      const result = await reviews.json();
+      return {
+        ...result,
+      };
+    } catch (error) {
+      setState({ ...state, error: error, loading: false });
+    }
+  };
+
   const handleAddReviews = async (review) => {
     try {
       setState({ ...state, loading: true });
@@ -36,12 +60,14 @@ const useReview = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(review)
+        body: JSON.stringify(review),
       });
 
-      const newReview = ([...state.data, await reviews.json()]).sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-      setState({ ...state, data: newReview , loading: false });
-      return true
+      const newReview = [...state.data, await reviews.json()].sort(
+        (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
+      );
+      setState({ ...state, data: newReview, loading: false });
+      return true;
     } catch (error) {
       setState({ ...state, error: error, loading: false });
     }
@@ -52,7 +78,7 @@ const useReview = () => {
       data: [],
       loading: false,
       error: null,
-    })
+    });
   };
 
   return {
@@ -60,6 +86,7 @@ const useReview = () => {
     handleFetchReviews,
     handleAddReviews,
     handleReset,
+    handleFetchReviewStats,
   };
 };
 

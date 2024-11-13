@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Text, Grid, Button } from 'suftnet-ui-kit';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
@@ -7,9 +7,24 @@ import book_image from '../../../../assets/imgs/2024-10-30 13_49_09-Window.png';
 import robert_image from '../../../../assets/imgs/robert.jpg';
 import { Link } from 'react-router-dom';
 import ReviewForm from './review-form';
+import { useReview } from '../../../../hooks/useReviews';
 
 const ContentBody = () => {
-  const [addReview, setAddReview] = useState(false);
+  const { handleFetchReviewStats } = useReview()
+  const [state, setState] = useState({})
+
+  useEffect(()=> {
+    async function loadReviewStar(){
+      const result = await handleFetchReviewStats()
+      setState(result)
+    }
+    loadReviewStar()
+  }, [])
+
+  const getAverageRating=()=> {
+    return Math.ceil(parseInt(state?.averageRating)) || 1 
+  }
+
   const ReadMoreLess = () => {
     const [isExpanded, setIsExpanded] = useState(false);
 
@@ -81,15 +96,15 @@ const ContentBody = () => {
             </div>
 
             <div className="flex-row justify-content-start align-items-center mt-2">
-              <StarRating start_rating={4} />
+              <StarRating start_rating={getAverageRating()} />
               <Text as="h2" className={`text-dark fw-normal fs-35 ps-3 pe-2 `}>
-                4.06
+                {state?.averageRating} 
               </Text>
               <Text as="h6" className={`text-dark fw-normal pe-2 `}>
-                142 rating
+                {state?.totalRating} rating
               </Text>
               <Text as="h6" className={`text-dark fw-normal pe-2 `}>
-                50 reviews
+                {state?.totalReviews} reviews
               </Text>
             </div>
             <div className="flex-column justify-content-start align-items-center mt-2 mb-1">

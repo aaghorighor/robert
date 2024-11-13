@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const StarRating = ({ start_rating = 0, starSize = '2x', handleRate }) => {
-    const [rating, setRating] = useState(start_rating);
+    const [rating, setRating] = useState(parseInt(start_rating) || 0);
+
+    useEffect(() => {
+        setRating(parseInt(start_rating) || 0);
+    }, [start_rating]);  
   
     const handleClick = (index) => {     
         if (index === 0) {

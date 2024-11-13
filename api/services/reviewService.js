@@ -5,7 +5,6 @@ const { identifierValidator } = require('../validation/identifierValidator')
 const Review = require('../model/review')
 
 function getReviews() {
- 
   try {
     return Review.find({}).sort({ createdAt: -1 })
   } catch (error) {
@@ -50,8 +49,37 @@ async function removeReview(id) {
   }
 }
 
+async function getReviewStats() {
+  const stats = await Review.aggregate([
+    {
+      $group: {
+        _id: null,
+        totalReviews: { $sum: 1 },
+        totalRating: { $sum: '$star' },
+        averageRating: { $avg: '$star' }
+      }
+    }
+  ])
+
+  if (stats.length > 0) {
+    const { totalReviews, totalRating, averageRating } = stats[0]
+    return {
+      totalReviews,
+      totalRating,
+      averageRating: parseFloat(averageRating.toFixed(1))
+    }
+  }
+
+  return {
+    totalReviews: 0,
+    totalRating: 0,
+    averageRating: 0
+  }
+}
+
 module.exports = {
   getReviews,
   addReview,
-  removeReview
+  removeReview,
+  getReviewStats
 }
