@@ -1,11 +1,6 @@
 const interceptor = (req, res, next) => {
   const allowedOrigins = [
     'http://localhost:3000',
-    'http://jerur-888da5501e7a.herokuapp.com',
-    'https://jerur.com',
-    'http://jerur.com',
-    'https://billing.stripe.com',
-    'http://localhost:5000',
     'http://192.168.0.20:3000'
   ]
   const origin = req.headers.origin || ''

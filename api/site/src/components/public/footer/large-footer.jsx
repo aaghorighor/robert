@@ -19,7 +19,7 @@ const BigFooter = (props) => {
           <Grid col lg={4} xs={12}>
             <img src={logo} alt="Logo"></img>
             <Text as="h5" className="text-lead text_small1">
-              {`We're a team of IT professionals dedicated to delivering cutting-edge solutions that help Churches of all sizes stay ahead of the curve.`}
+              {`We're a team of IT professionals dedicated to delivering cutting-edge solutions that help Organization of all sizes stay ahead of the curve.`}
             </Text>
             <div className="social-list-wrap mt-3">
               <ul className="social-list list-inline list-unstyled">
@@ -49,27 +49,27 @@ const BigFooter = (props) => {
           <Grid col lg={2} xs={12}>
             <ul className="list-unstyled">
               <li className="mb-2">
-                <Link to="/" className="p-0">
+                <Link to="#" className="p-0">
                   How it works
                 </Link>
               </li>             
               <li className="mb-2">
-                <Link to="/pricing" className="p-0">
+                <Link to="#" className="p-0">
                   Pricing
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="/features" className="p-0">
+                <Link to="#" className="p-0">
                   Features
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="/faq" className="p-0">
+                <Link to="#" className="p-0">
                   FAQS
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="/contact-us" className="p-0">
+                <Link to="#" className="p-0">
                   Contact Us
                 </Link>
               </li>

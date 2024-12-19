@@ -15,15 +15,7 @@ const config = {
   FRONTEND_URL: 'http://suftnet.com',
 };
 
-const ROLES = {
-  DOCTOR: 'doctor',
-  ADMIN: 'admin',
-  PATIENT: 'patient',
-  USER: 'user',
-  OWNER: 'owner',
-};
-
 module.exports = {
-  ROLES,
+
   config,
 };
