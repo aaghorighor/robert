@@ -72,7 +72,7 @@ const ContentBody = () => {
               Component={Link}
               to="/v1/dashboard"
             >
-              Want to road
+              Want to read
             </Button>
             <Button
               className="google-play-store-btn mt-3 w-100"
