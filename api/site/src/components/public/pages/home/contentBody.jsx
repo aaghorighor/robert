@@ -67,13 +67,13 @@ const ContentBody = () => {
         <Grid col lg={4} xs={12}>
           <div className="flex-column justify-content-start align-items-start">
             <img alt="book" src={book_image} className="img-fluid" />
-            <Button
+            {/* <Button
               className="solid-btn-0 w-100 mt-3"
               Component={Link}
               to="/v1/dashboard"
             >
               Want to read
-            </Button>
+            </Button> */}
             <Button
               className="google-play-store-btn mt-3 w-100"
               Component={Link}
