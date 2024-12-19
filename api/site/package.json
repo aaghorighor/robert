@@ -29,7 +29,7 @@
     "dev:staging": "cross-env NODE_ENV=development webpack --config webpack/webpack.prod.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.js",
     "dev:server": "nodemon",
-    "postinstall": "yarn build",
+    "postinstall": "npm run build",
     "lint": "eslint --ext .js --ext .jsx .",
     "lint:staged": "lint-staged",
     "lint:fix": "eslint --ext .js --ext .jsx . --fix",
@@ -81,7 +81,8 @@
     "typewriter-effect": "^2.19.0",
     "url-loader": "^4.1.1",
     "web-vitals": "^2.1.0",
-    "xlsx": "^0.18.5"
+    "xlsx": "^0.18.5",
+    "suftnet-ui-kit": "file:E:/Git/react/ui-lib/suftnet-ui-kit/suftnet-ui-kit-1.0.0.tgz"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
